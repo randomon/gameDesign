@@ -13,7 +13,6 @@ LIGHTGREEN GREEN
 11101
 11111
 10111
-
 Background2
 GREEN darkGREEN
 11111
@@ -21,6 +20,20 @@ GREEN darkGREEN
 11101
 11111
 10111
+Background3
+lightgreen darkGREEN
+11111
+01111
+11101
+11111
+10111
+Background4
+brown lightbrown white
+11110
+11110
+11110
+11110
+00000
  
  
 Exit
@@ -31,30 +44,13 @@ DarkBlue
 .000.
 .....
  
-Wall1
+Wall
 BROWN DARKBROWN
 00010
 11111
 01000
 11111
 00010
-
-Background3
-darkgreen darkgrey
-11111
-01111
-11101
-11111
-10111
-
- 
-Wall2
-darkbrown brown
-10011
-11110
-01001
-01111
-10010
 
 Teleport T
 darkblue blue Grey Purple
@@ -155,12 +151,12 @@ Black Orange Yellow Blue
 =======
 LEGEND
 =======
-Background = Background1 or Background2 or Background3
+Background = Background1 or Background2 or Background3 or Background4
 . = Background1
 , = Background2
-Wall = Wall1 or Wall2
-# = Wall1
-@ = Wall2
+- = Background3
++ = Background4
+# = Wall
 Player = Player_stealth or Player_captured or Temp
 O = Objective
 E = Exit
@@ -217,7 +213,7 @@ LEVELS
 =======
 
 message LEVEL 1
-message Something cool lies in front of you!
+message Something shiny lies in front of you!
 ###########
 #....O....#
 #.........#
@@ -225,9 +221,8 @@ message Something cool lies in front of you!
 #.........#
 #....P....#
 ####EEE####
-
 message LEVEL 2
-message Uhh, there's a guard!
+message Watch out, there's a guard!
 #####################
 #,,,,o,,,,,,,,,o,,,,#
 #,,,,,,,,,g,,,,,,,,,#
@@ -236,35 +231,35 @@ message Uhh, there's a guard!
 #,,,,,,,,,,,,,,,,,,,#
 #,,,,,,,,,p,,,,,,,,,#
 #########eee#########
-
 message LEVEL 3
-message Whoah! What now?
-############
-#O####...###
-#.........G#
-#..G.......#
-#..#.......#
-#G.#.p.....#
-####EEE#####
-
-message LEVEL 4
 message New Frontiers…
 #####################
-###...........##....#
-###..........g##....#
-#...g##.............#
-#....##..........####
-e.........##.....#..#
-ep........##.......o#
-e.........g......#..#
-#................####
-#...##g.............#
-#...##......g.......#
-#..........##.......#
+###,,,,,,,,,,,##,,,,#
+###,,,,,,,,,,g##,,,,#
+#,,,g##,,,,,,,,,,,,,#
+#,,,,##,,,,,,,,,,####
+e,,,,,,,,,##,,,,,#,,#
+ep,,,,,,,,##,,,,,,,o#
+e,,,,,,,,,g,,,,,,#,,#
+#,,,,,,,,,,,,,,,,####
+#,,,##g,,,,,,,,,,,,,#
+#,,,##,,,,,,g,,,,,,,#
+#,,,,,,,,,,##,,,,,,,#
 #####################
+message LEVEL 4
+message Woah! What now?
+############
+#O####---###
+#---------G#
+#--G-------#
+#--#-------#
+#G-#-p-----#
+####EEE#####
+
+
 
 message LEVEL 5
-message Master in electronics!
+message Master in electronics! (faithfully)
 ###############
 #............##
 #.............#
@@ -285,8 +280,8 @@ message It should be easy now...
 #.#..O.......#..O....#
 #.#.....L....#.......#
 #....................#
-#..#...#.#...L#..#####
-#..#.###F#...##......#
+#......#.#...L#..#####
+#...####F#...##......#
 #G..#..P.#...F.....G.#
 #####EEE##############
 
@@ -331,6 +326,22 @@ message Wait what?!
 #########eee#########
 
 message LEVEL 10
+message Those bageleaters won’t let you pass while they’re on a portal!
+##########
+####...#G#
+##.......#
+#........#
+#T.......#
+#........#
+########G#
+#T.#...#.#
+#..#GO####
+#.T#T#####
+#..#######
+#...P....#
+###EEE####
+
+message LEVEL 11
 message Oh my… Portal!
 #####################
 #..................g#
@@ -347,24 +358,39 @@ message Oh my… Portal!
 #.........p..T#L....#
 #########eee#########
 
-message LEVEL 11
-message Those bageleaters won’t let you pass while they’re on a portal!
-##########
-####...#G#
-##.......#
-#........#
-#T.......#
-#........#
-########G#
-#T.#...#.#
-#..#GO####
-#.T#T#####
-#..#######
-#...P....#
-###EEE####
-
 message LEVEL 12
+message Try to teleport through those guardsl!
+###################
+#ggogglf...fg.....#
+#ggggglf..tfg..t..#
+#....tlft..fg....t#
+#fffffffl..fg...gg#
+#.....##########..#
+#.....#.....####..#
+#fffff#l....####.t#
+#t....#t...l####ff#
+#.....#..p.t####t.#
+########eee########
 
+message LEVEL 13
+###############
+#o..l..g#.tg.o#
+######..#..f..#
+######..#.f...#
+#####..f#######
+#####.f.......#
+####..#########
+#....####.tl..#
+#gk.f..##.kk..#
+#...###l#.lk..#
+##...t#.#tkk..#
+##....#.#######
+##....l.......#
+##.....p......#
+######eee######
+
+message LEVEL 14
+message Now it’s the time to prove yourself!
 #########################
 #kkkk#.........t#..#t.kk#
 #klll#.#.####..l#..#k..k#
